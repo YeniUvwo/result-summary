@@ -1,0 +1,229 @@
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    background:  hsl(221, 100%, 96%);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.overlay{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+    height: 330px;
+    background-color: white;
+    border-radius: 20px;
+}
+.first-half{
+    width: 230px;
+    height: 329px;
+    padding: 20px;
+    background: linear-gradient(to bottom,#7857ff,#2e2be9);
+    color: white;
+    border-radius: 20px; 
+}
+h1{
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 15px;
+    color:hsl(0, 0%, 85%);
+}
+.top-score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #4e21ca,#2421ca00);
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin-left: 30px;
+}
+.top-score h2 {
+    font-size: 2.7em;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+h2{
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+.score{
+    font-size: 0.7em;
+    font-weight: 700;
+    color: hsl(241, 81%, 77%);
+    margin-top: 0px;
+}
+.first-p{
+    font-size: 0.65em;
+    text-align: center;
+    padding: 2px 20px 20px;
+    color: hsl(0, 0%, 100%);
+    opacity: 70%;
+}
+.second-half{
+    width: 230px;
+    height: 330px;
+    padding: 20px;
+}
+h3{
+    font-size: 0.9em;
+    font-weight: 800;
+    column-rule-color: hsl(234, 85%, 45%);
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+.summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    border-radius: 5px;
+    gap: 40px;
+    width: 180px;
+    height: 35px;
+}
+.red-text{
+    background-color:  hsl(0, 100%, 97%);
+    color: hsl(0, 100%, 67%) ;
+}
+.yellow-text{
+    background-color: hsl(39, 100%, 96%);
+    color:hsl(39, 100%, 56%) ;
+}
+.green-text{
+    background-color: hsl(166, 100%, 97%);
+    color:hsl(166, 100%, 37%) ;
+}
+.green-text h4{
+    width: 71.78px;
+}
+.blue-text{
+    background-color: hsl(234, 85%, 95%);
+    color: hsl(234, 85%, 45%);
+}
+.blue-text h4{
+    width: 71.78px;
+}
+
+h4{
+    font-size: 0.7em;
+    margin-top: 7px;
+    font-weight: 700;
+}
+
+img{
+    width: 13px;
+    margin-right: 17px;
+}
+h5{
+    font-size: 0.7em;
+    font-weight: 800;
+    margin-top: 7px;
+    color: hsl(234, 5%, 25%);
+}
+.inner{
+    color: hsl(0, 0%, 65%);
+    margin-left: 2px;
+}
+.btn{
+    margin-top: 20px;
+    width: 180px;
+    margin-left: 8px;
+    border-radius: 30px;
+    font-size: 0.7em;
+    height: 35px;
+    color: hsl(0, 0%, 95%);
+    background-color:hsla(241, 22%, 26%, 2);
+    border-color: hsla(241, 22%, 26%, 2);
+}
+.btn:hover{
+    background-color:hsl(241, 76%, 55%);
+    border-color: hsl(241, 81%, 54%);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width: 520px) {
+    .overlay{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 660px;
+        border-radius: 0px;
+    }
+    .first-half{
+        width: 302px;
+        height: 280px;
+        border-radius: 0px 0px 30px 30px;
+        margin-top: -50px;
+    }
+    h1{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .top-score{
+        margin-left: 75px;
+        width: 110px;
+        height: 110px;
+    }
+    h2{
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+    .second-half{
+        padding: 20px;
+        width: 300px;
+    }
+    .first-p{
+        font-size: 0.8em;
+        padding-left: 3px 10px 20px;
+    }
+    h3{
+        margin-top: 2px;
+        margin-left: 5px;
+        font-size: 1em;
+    }
+    .summary{
+        margin-left: 5px;
+        width: 250px;
+        height: 50px;
+        padding: 0px;
+        border-radius: 10px;
+    }
+    img{
+        width: 17px;
+        height: 17px;
+    }
+    h4{
+        font-size: 0.9em;
+    }
+    h5{
+        font-size: 0.9em;
+    }
+    .inner{
+        margin-right: 0px;
+    }
+    .btn{
+        width: 250px;
+    }
+}
